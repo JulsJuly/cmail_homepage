@@ -26,14 +26,29 @@ header ul li a {
     padding: 15px 10px;
     text-transform: uppercase;
     box-sizing: border-box ;
+    color: #1D5A9F;
 }
 
 header ul li {
     display: block;
     text-align: center;
-    border-right: 1px solid #aaa;
+    border-right: 1px solid #1D5A9F;
 }
 
 header ul li:last-child {
     border-right: none;
+}
+
+header ul li a.active {
+    background-color: rgb(160, 187, 221);
+    color: #fff;
+}
+
+header ul li a:hover {
+    background-color: #D5E0ED;
+}
+
+header ul li a.active:hover {
+    background-color: rgb(160, 187, 221);
+    color: #fff;
 }
