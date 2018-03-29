@@ -1,0 +1,39 @@
+header {
+    display: block;
+    height: 50px;
+    width: 100%;
+    -webkit-box-shadow: -2px 4px 14px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 4px 14px -6px rgba(0,0,0,0.75);
+    box-shadow: -2px 4px 14px -6px rgba(0,0,0,0.75);
+}
+
+header ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+}
+
+header ul li a {
+    display: block;
+    min-width: 80px;
+    height: 100% !important;
+    font-size: 1em;
+    display: block;
+    text-decoration: none;
+    padding: 15px 10px;
+    text-transform: uppercase;
+    box-sizing: border-box ;
+}
+
+header ul li {
+    display: block;
+    text-align: center;
+    border-right: 1px solid #aaa;
+}
+
+header ul li:last-child {
+    border-right: none;
+}
