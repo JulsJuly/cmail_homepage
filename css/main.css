@@ -35,7 +35,14 @@ section a {
     display: flex;
     justify-content: space-around;
     padding: 30px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.1) 10%, transparent 5%), linear-gradient(to right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.1) 20%);
+    background-size: 10px 10px;
 }
+      
+.stage::after{
+    background-image: linear-gradient(black, transparent);
+}
+
 .stage_laptop {
     background-image: url("../static/laptop.svg");
     background-size: contain;
