@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="204px" height="185px" viewBox="0 0 204 185" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="155" height="158"></rect>
+        <rect id="path-2" x="22" y="12" width="155" height="158"></rect>
+        <rect id="path-3" x="49" y="27" width="155" height="158"></rect>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="var-2" transform="translate(-515.000000, -1069.000000)">
+            <g id="SECTION-main-features" transform="translate(65.000000, 927.000000)">
+                <g id="main-features" transform="translate(0.000000, 34.000000)">
+                    <g id="multiple-domains" transform="translate(450.000000, 32.000000)">
+                        <g id="Group" transform="translate(0.000000, 76.000000)">
+                            <g id="Rectangle-13">
+                                <use fill-opacity="0.272588315" fill="#D5E0ED" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                <rect stroke="#637D9B" stroke-width="3" x="1.5" y="1.5" width="152" height="155"></rect>
+                            </g>
+                            <g id="Rectangle-13">
+                                <use fill-opacity="0.272588315" fill="#D5E0ED" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                <rect stroke="#637D9B" stroke-width="3" x="23.5" y="13.5" width="152" height="155"></rect>
+                            </g>
+                            <g id="Rectangle-13">
+                                <use fill-opacity="0.272588315" fill="#D5E0ED" fill-rule="evenodd" xlink:href="#path-3"></use>
+                                <rect stroke="#637D9B" stroke-width="3" x="50.5" y="28.5" width="152" height="155"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

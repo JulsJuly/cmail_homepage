@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="195px" height="150px" viewBox="0 0 195 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 11</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="24" y="129" width="146" height="16"></rect>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="var-2" transform="translate(-961.000000, -1074.000000)">
+            <g id="Group-11" transform="translate(964.000000, 1079.000000)">
+                <g id="Rectangle-12">
+                    <use fill="#F3F6FA" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <rect stroke="#637D9B" stroke-width="3" x="25.5" y="130.5" width="143" height="13"></rect>
+                </g>
+                <polygon id="Path-8" stroke="#637D9B" stroke-width="3" fill="#F3F6FA" points="0 41.3872447 24.3488991 119 168.891424 119 189 41.3872447 126.821378 73.8731315 94.5 0 70.5274325 73.8731315"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

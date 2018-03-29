@@ -34,9 +34,13 @@ section a {
 .stage {
     display: flex;
     justify-content: space-around;
-    padding: 30px 0;
+    padding: 30px 0 50px 0;
     background-image: linear-gradient(rgba(0,0,0,0.1) 10%, transparent 5%), linear-gradient(to right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.1) 20%);
     background-size: 10px 10px;
+    -webkit-box-shadow: -2px 2px 10px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 2px 10px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: -2px 2px 10px -6px rgba(0, 0, 0, 0.75);
+
 }
       
 .stage::after{
@@ -60,7 +64,7 @@ section a {
     font-weight: 400;
 }
 
-.stage_text h1 span {
+.stage_text h1 span, .features h3 span{
     font-weight: 700;
 }
 
@@ -70,8 +74,90 @@ section a {
 .stage .buttons_2x {
     display: flex;
     justify-content: space-around;
-    width: 70%;
+    width: 400px;
     left: -10px;
     position: relative;
 }
 
+/* ===FEATURES=== */
+
+.features h3 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+}
+
+.features .feature_item {
+    width: 350px;
+    min-height: 400px;
+}
+
+.features .feature_item div, .features .feature_item p {
+    float: left;
+    display: block;
+}
+
+.features .configure {
+    background-image: url("../static/settings-gears.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:40%;
+    height: 100px;
+}
+
+.features .domains {
+    background-image: url("../static/domains.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:40%;
+    height: 100px; 
+}
+
+.features .admin {
+    background-image: url("../static/adminTools.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:40%;
+    height: 100px; 
+}
+
+.features .feature_item p {
+    width: 150px;
+}
+
+
+/* ===FEATURES=== */
+
+.modules {
+    display: flex;
+    justify-content: space-around;
+}
+
+.modules div {
+    width: 400px;
+    padding: 10px;
+}
+
+.modules h4 {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #1D5A9F;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.modules p {
+    margin: 20px 0 40px 0;
+}
+
+.modules a {
+    margin: 0 auto;
+    display: block;
+    width: 100px;
+    text-align: center;
+}
