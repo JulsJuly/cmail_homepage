@@ -1,6 +1,6 @@
 header {
     display: block;
-    height: 50px;
+    height: 40px;
     width: 100%;
     -webkit-box-shadow: -2px 4px 14px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: -2px 4px 14px -6px rgba(0,0,0,0.75);
@@ -20,7 +20,7 @@ header ul li a, footer ul li a {
     display: block;
     min-width: 80px;
     height: 100% !important;
-    font-size: 1em;
+    font-size: 14px;
     display: block;
     text-decoration: none;
     padding: 15px 10px;
@@ -81,8 +81,17 @@ footer {
     -webkit-box-shadow: -2px -3px 10px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: -2px -3px 10px -6px rgba(0,0,0,0.75);
     box-shadow: -2px -3px 10px -6px rgba(0,0,0,0.75);
-    height: 50px;
+    height: 40px;
+    background-color: #1D5A9F;
 }
 footer ul {
-    flex-direction: center !important;
+    justify-content: center !important;
+}
+
+footer a {
+    color: #fff !important;
+}
+
+footer ul li {
+    border-right: 1px solid #fff;
 }

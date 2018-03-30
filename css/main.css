@@ -12,12 +12,13 @@ h1, h2, h3, h4, h5, h6, a, p, span {
 }
 
 .light_blue {
-    background-color: rgba(29, 90, 159, 0.7);
+    background-color: rgba(29, 90, 159, 0.7) !important;
 }
 
 .light_green {
-    background-color: rgba(35, 100, 27, 0.7);
+    background-color: rgba(60, 141, 49, 0.7) !important;
 }
+
 
 .caps {
     text-transform: uppercase;
@@ -52,8 +53,8 @@ section a.button {
     box-shadow: -2px 2px 10px -6px rgba(0, 0, 0, 0.75);
 }
 
-section a.button:hover {
-    background-color: rgb(76, 83, 90);
+section a.button:hover, .light_blue:hover {
+    background-color: rgb(76, 83, 90) !important;
 }
 
 .stage {
@@ -228,9 +229,10 @@ section a.button:hover {
     background-color: #1D5A9F;
     color: #fff;
     text-align: center;
-    line-height: 50px;
+    line-height: 22px;
     margin: 0;
     font-weight: 400;
+    padding: 10px 0;
 }
 
 .use-case .use-case_text {
@@ -279,7 +281,7 @@ section a.button:hover {
 }
 
 .community .community_link .link {
-    font-size: 22px;
+    font-size: 20px;
     font-weight:700;
     color: #1D5A9F;
 }
@@ -290,6 +292,8 @@ section a.button:hover {
 }
 
 .community .community_link .link-info {
-    font-size: 15px;
+    font-size: 14px;
+    width: 50%;
+    margin: 0 auto;
     color: rgb(128, 127, 127);
 }
