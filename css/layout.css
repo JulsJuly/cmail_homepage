@@ -7,7 +7,7 @@ header {
     box-shadow: -2px 4px 14px -6px rgba(0,0,0,0.75);
 }
 
-header ul {
+header ul, footer ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -16,7 +16,7 @@ header ul {
         justify-content: flex-end;
 }
 
-header ul li a {
+header ul li a, footer ul li a {
     display: block;
     min-width: 80px;
     height: 100% !important;
@@ -29,13 +29,13 @@ header ul li a {
     color: #1D5A9F;
 }
 
-header ul li {
+header ul li, footer ul li {
     display: block;
     text-align: center;
     border-right: 1px solid #1D5A9F;
 }
 
-header ul li:last-child {
+header ul li:last-child, footer ul li:last-child {
     border-right: none;
 }
 
@@ -51,4 +51,38 @@ header ul li a:hover {
 header ul li a.active:hover {
     background-color: rgb(160, 187, 221);
     color: #fff;
+}
+
+/* ===TITLES OF THE SECTIONS=== */
+.section-title_center {
+    width: 100%;
+    display: table;
+    background-image: linear-gradient(rgba(0,0,0,0.1) 10%, transparent 5%), linear-gradient(to right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.1) 20%);
+    background-size: 10px 10px;
+    height: 80px;
+    padding: 0 20px;
+    text-align: center;
+    -webkit-box-shadow: -2px -3px 10px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px -3px 10px -6px rgba(0,0,0,0.75);
+    box-shadow: -2px -3px 10px -6px rgba(0,0,0,0.75);
+    margin-bottom: 40px;
+}
+
+.section-title {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    text-transform: uppercase;
+    color: #1D5A9F
+}
+
+/* ===FOOTER=== */
+footer {
+    -webkit-box-shadow: -2px -3px 10px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px -3px 10px -6px rgba(0,0,0,0.75);
+    box-shadow: -2px -3px 10px -6px rgba(0,0,0,0.75);
+    height: 50px;
+}
+footer ul {
+    flex-direction: center !important;
 }

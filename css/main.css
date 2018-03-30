@@ -12,23 +12,48 @@ h1, h2, h3, h4, h5, h6, a, p, span {
 }
 
 .light_blue {
-    background-color: rgba(29, 90, 159, 0.5);
+    background-color: rgba(29, 90, 159, 0.7);
 }
 
 .light_green {
-    background-color: rgba(35, 100, 27, 0.5);
+    background-color: rgba(35, 100, 27, 0.7);
 }
 
-section a {
+.caps {
+    text-transform: uppercase;
+}
+
+.bold_blue {
+    font-weight: 600;
+    color: #1D5A9F;
+}
+
+a.bold_blue {
+    text-decoration: none;
+    padding: 1px 2px;
+    border: 1px solid #1D5A9F;
+    border-radius: 5px;
+}
+
+a.bold_blue:hover {
+    background-color: rgba(72, 134, 196, 0.3);
+}
+
+section a.button {
     text-decoration: none;
     color: #fff;
     padding: 10px 15px;
     background-color: #1D5A9F;
     border-radius: 5px;
+    border: none;
     text-transform: uppercase;
     -webkit-box-shadow: -2px 2px 10px -6px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -2px 2px 10px -6px rgba(0, 0, 0, 0.75);
     box-shadow: -2px 2px 10px -6px rgba(0, 0, 0, 0.75);
+}
+
+section a.button:hover {
+    background-color: rgb(76, 83, 90);
 }
 
 .stage {
@@ -37,9 +62,9 @@ section a {
     padding: 30px 0 50px 0;
     background-image: linear-gradient(rgba(0,0,0,0.1) 10%, transparent 5%), linear-gradient(to right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.1) 20%);
     background-size: 10px 10px;
-    -webkit-box-shadow: -2px 2px 10px -6px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -2px 2px 10px -6px rgba(0, 0, 0, 0.75);
-    box-shadow: -2px 2px 10px -6px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -2px 4px 10px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px 4px 10px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: -2px 4px 10px -6px rgba(0, 0, 0, 0.75);
 
 }
       
@@ -75,7 +100,7 @@ section a {
     display: flex;
     justify-content: space-around;
     width: 400px;
-    left: -10px;
+    left: -20px;
     position: relative;
 }
 
@@ -88,12 +113,14 @@ section a {
 
 .features {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    margin: 50px 0;
 }
 
 .features .feature_item {
-    width: 350px;
-    min-height: 400px;
+    min-height: 300px;
+    margin: 0 40px;
+    width: 300px;
 }
 
 .features .feature_item div, .features .feature_item p {
@@ -106,7 +133,8 @@ section a {
     background-size: contain;
     background-repeat: no-repeat;
     width:40%;
-    height: 100px;
+    height: 200px;
+    margin: 15px;
 }
 
 .features .domains {
@@ -114,7 +142,8 @@ section a {
     background-size: contain;
     background-repeat: no-repeat;
     width:40%;
-    height: 100px; 
+    height: 200px;
+    margin: 15px; 
 }
 
 .features .admin {
@@ -122,24 +151,43 @@ section a {
     background-size: contain;
     background-repeat: no-repeat;
     width:40%;
-    height: 100px; 
+    height: 200px;
+    margin: 15px; 
 }
 
 .features .feature_item p {
     width: 150px;
 }
 
+.features h3 {
+    text-align: center;
+}
 
-/* ===FEATURES=== */
+
+/* ===MODULES=== */
 
 .modules {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    margin: 80px 0;
 }
 
 .modules div {
     width: 400px;
     padding: 10px;
+    margin: 0 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.modules div:first-child::after {
+    border-right: 1px solid #1D5A9F;
+    content: '';
+    position: absolute;
+    right: -50px;
+    top: 0px;
+    width: 1px;
+    height: 100%;
 }
 
 .modules h4 {
@@ -160,4 +208,88 @@ section a {
     display: block;
     width: 100px;
     text-align: center;
+}
+
+/* ===COMMON USE CASES=== */
+.use-cases {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.use-cases .use-case {
+    border: 1px solid #1D5A9F;
+    border-radius: 5px;
+    margin: 0 20px;
+}
+
+.use-case .use-case_title {
+    width: 100%;
+    background-color: #1D5A9F;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.use-case .use-case_text {
+    padding: 10px;
+}
+
+.use-cases .use-case_text ul {
+    list-style-type: none;
+}
+
+.use-cases .use-case_text ul li {
+    line-height: 24px;
+    position: relative;
+}
+
+.use-cases .use-case_text ul li::before {
+    content: "\25C9";
+    color: #1D5A9F;
+    font-size: 9px;
+    left: -15px;
+    position: absolute;
+}
+
+/* ===COMMUNITY=== */
+
+.community {
+    margin: 10px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.community .community-text p{
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+
+.community .community_link {
+    width: 100%;
+    border-top: 1px solid #1D5A9F;
+    text-align: center;
+    padding: 10px;
+}
+
+.community .community_link p {
+    margin: 0;
+}
+
+.community .community_link .link {
+    font-size: 22px;
+    font-weight:700;
+    color: #1D5A9F;
+}
+
+.community .community_link .link a {
+    text-decoration: none;
+    color: #1D5A9F;
+}
+
+.community .community_link .link-info {
+    font-size: 15px;
+    color: rgb(128, 127, 127);
 }
