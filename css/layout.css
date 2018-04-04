@@ -1,10 +1,11 @@
 header {
     display: block;
-    height: 40px;
+    height: 50px;
     width: 100%;
     -webkit-box-shadow: -2px 4px 14px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: -2px 4px 14px -6px rgba(0,0,0,0.75);
     box-shadow: -2px 4px 14px -6px rgba(0,0,0,0.75);
+    background-color: #5D7C9E;
 }
 
 header ul, footer ul {
@@ -18,7 +19,7 @@ header ul, footer ul {
 
 header ul li a, footer ul li a {
     display: block;
-    min-width: 80px;
+    min-width: 90px;
     height: 100% !important;
     font-size: 14px;
     display: block;
@@ -26,17 +27,12 @@ header ul li a, footer ul li a {
     padding: 15px 10px;
     text-transform: uppercase;
     box-sizing: border-box ;
-    color: #1D5A9F;
+    color: #fff;
 }
 
 header ul li, footer ul li {
     display: block;
     text-align: center;
-    border-right: 1px solid #1D5A9F;
-}
-
-header ul li:last-child, footer ul li:last-child {
-    border-right: none;
 }
 
 header ul li a.active {
@@ -82,7 +78,7 @@ footer {
     -moz-box-shadow: -2px -3px 10px -6px rgba(0,0,0,0.75);
     box-shadow: -2px -3px 10px -6px rgba(0,0,0,0.75);
     height: 40px;
-    background-color: #1D5A9F;
+    background-color: #5D7C9E;
 }
 footer ul {
     justify-content: center !important;
@@ -93,5 +89,5 @@ footer a {
 }
 
 footer ul li {
-    border-right: 1px solid #fff;
+    text-align: cneter;
 }
