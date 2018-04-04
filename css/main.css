@@ -61,8 +61,10 @@ section a.button:hover, .light_blue:hover {
     display: flex;
     justify-content: space-around;
     padding: 30px 0 50px 0;
-    background-image: linear-gradient(rgba(0,0,0,0.1) 10%, transparent 5%), linear-gradient(to right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.1) 20%);
-    background-size: 10px 10px;
+    /*background-image: linear-gradient(rgba(0,0,0,0.1) 10%, transparent 5%), linear-gradient(to right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.1) 20%);*/
+    background-image: linear-gradient(to right, rgba(0,0,0,0) 99%, rgba(0,0,0,0.1) 30%);
+    background-color: rgba(97, 145, 202, 0.35);
+    background-size: 50px;
     -webkit-box-shadow: -2px 4px 10px -6px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: -2px 4px 10px -6px rgba(0, 0, 0, 0.75);
     box-shadow: -2px 4px 10px -6px rgba(0, 0, 0, 0.75);
@@ -85,7 +87,7 @@ section a.button:hover, .light_blue:hover {
 
 .stage_text {
     width: 40%;
-    left: 40px;
+    left: 60px;
     top: 40px;
     position: relative;
 }
@@ -101,7 +103,8 @@ section a.button:hover, .light_blue:hover {
 
 .stage_text p, .stage_text a {
     font-size: 1em;
-    line-height: 1.5em;
+    line-height: 1.8em;
+    margin: 20px 0;
 }
 .stage .buttons_2x {
     display: flex;
