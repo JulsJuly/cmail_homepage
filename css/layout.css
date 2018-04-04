@@ -49,6 +49,13 @@ header ul li a.active:hover {
     color: #fff;
 }
 
+/* ===WRAPPER=== */
+.wrapper {
+    margin: 0 auto;
+    max-width: 1240px;
+}
+
+
 /* ===TITLES OF THE SECTIONS=== */
 .section-title_center {
     width: 100%;
