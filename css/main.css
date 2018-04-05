@@ -339,7 +339,7 @@ section a.button:hover, .light_blue:hover {
 
 .step {
     width: 90%;
-    margin: 0 auto;
+    margin: 30px auto;
     position: relative;
     padding: 20px;
     background-color: rgba(97, 145, 202, 0.25);
