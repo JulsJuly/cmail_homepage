@@ -55,6 +55,11 @@ header ul li a.active:hover {
     max-width: 1240px;
 }
 
+.stripes {
+    background-image: linear-gradient(to right, rgba(0,0,0,0) 99%, rgba(0,0,0,0.1) 30%);
+    background-size: 50px;
+}
+
 
 /* ===TITLES OF THE SECTIONS=== */
 .section-title_center {

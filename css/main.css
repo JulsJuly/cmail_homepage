@@ -57,7 +57,11 @@ section a.button:hover, .light_blue:hover {
     background-color: rgb(76, 83, 90) !important;
 }
 
-.stage {
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+.stage, .blue_stripes_wrapper {
     /*background-image: linear-gradient(rgba(0,0,0,0.1) 10%, transparent 5%), linear-gradient(to right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.1) 20%);*/
     background-image: linear-gradient(to right, rgba(0,0,0,0) 99%, rgba(0,0,0,0.1) 30%);
     background-color: rgba(97, 145, 202, 0.35);
@@ -69,11 +73,10 @@ section a.button:hover, .light_blue:hover {
 }
 
 .stage .wrapper {
-    display: flex;
     justify-content: space-around;
     padding: 30px 0 50px 0;
 }
-      
+
 .stage::after{
     background-image: linear-gradient(black, transparent);
 }
@@ -183,6 +186,7 @@ section a.button:hover, .light_blue:hover {
     display: flex;
     justify-content: center;
     margin: 80px 0;
+    padding: 40px 0;
 }
 
 .modules div {
@@ -193,7 +197,7 @@ section a.button:hover, .light_blue:hover {
     position: relative;
 }
 
-.modules div:first-child::after {
+.modules div:nth-child(2)::after {
     border-right: 1px solid #1D5A9F;
     content: '';
     position: absolute;
@@ -308,4 +312,45 @@ section a.button:hover, .light_blue:hover {
     width: 50%;
     margin: 0 auto;
     color: rgb(128, 127, 127);
+}
+
+/* ===INSTALL GUIDE=== */
+
+.blue_stripes_wrapper div h2 {
+    margin:0;
+    text-transform: uppercase;
+    color: #1D5A9F;
+    text-align: center;
+}
+
+.subpage {
+    padding: 30px 0;
+}
+
+.text_center {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center
+}
+
+.text_center p {
+    line-height: 24px;
+}
+
+.step {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px;
+    background-color: rgba(97, 145, 202, 0.25);
+}
+
+.step .step_text {
+    column-count: 2;
+    line-height: 22px;
+}
+
+.step .step_text p {
+    margin: 0;
+    padding: 10px 0;
 }

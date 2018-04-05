@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/layout.css">
 </head>
-<body>
+<body class="stripes">
     <header>
             <ul>
                 <li><a href="index.html">home</a></li>
@@ -19,6 +19,30 @@
                 <li><a href="">community</a></li>
             </ul>
     </header>
+    <section class="subpage blue_stripes_wrapper">
+        <div class="title">
+            <h2>install guide</h2>
+        </div>
+    </section>
+    <div class="text_center">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.subpagelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.subpagelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.subpage</p>
+    </div>
+    <section class="step">
+        <div class="number_title">
+            <h3>0.</h3>
+            <h4>Setting up your domain</h4>
+        </div>
+        <div class="step_text">
+            <p>Depending on your experience and requirements, this may either be the first step to perform (if you are configuring a fresh domain) or the last (if you are moving an existing domain or already are experienced with running mail servers).</p>
+
+            <p>In order to announce to the rest of the world that any particular server on the internet should receive mail for a domain, that domain needs to have a so-called MX record in its DNS table. The server responsible for your domains DNS is most often configurable by some kind of panel at your registrar.</p>
+            
+            <p>An MX record contains the IP addresses or hostnames of one or more servers that will be connected to by other mail servers trying to send you mail. These records are ordered, so that if one of them should fail another one is automatically tried.</p>
+            
+            <p>In order to properly receive mail adressed to your domain, you will have to set up these records to point at the machine running your upcoming cmail installation.</p>
+        </div>
+
+    </section>
     <footer>
         <ul>
             <li><a href="">impressum</a></li>
