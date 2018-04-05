@@ -40,11 +40,13 @@ header ul li a.active {
     color: #fff;
 }
 
-header ul li a:hover {
-    background-color: #D5E0ED;
+header ul li a:hover, footer ul li a:hover {
+    background-color: rgb(65, 92, 126);
+    text-decoration: underline;
+    
 }
 
-header ul li a.active:hover {
+header ul li a.active:hover{
     background-color: rgb(160, 187, 221);
     color: #fff;
 }
@@ -102,4 +104,30 @@ footer a {
 
 footer ul li {
     text-align: cneter;
+}
+
+
+/* ===COLUMNS FOR TEXT AND DIVS=== */
+/*TEXT*/
+.one_col {
+    column-count: 1;
+}
+
+.two_cols {
+    column-count: 2;
+}
+/*DIVS*/
+.divs_together {
+    display: flex;
+    justify-content: center;
+}
+
+.divs_together section {
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.divs_together section .number_title,.divs_together section .step_text {
+    width: 85%;
+    margin: 0 auto;
 }
