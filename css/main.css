@@ -5,6 +5,7 @@
 body, html {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6, a, p, span {
@@ -94,13 +95,14 @@ section a.button:hover, .light_blue:hover {
 .stage_text {
     width: 40%;
     left: 60px;
-    top: 40px;
+    top: 80px;
     position: relative;
 }
 
 .stage_text h1 {
     font-size: 3em;
     font-weight: 400;
+    margin: 0;
 }
 
 .stage_text h1 span, .features h3 span{
@@ -109,8 +111,9 @@ section a.button:hover, .light_blue:hover {
 
 .stage_text p, .stage_text a {
     font-size: 1em;
-    line-height: 1.8em;
+    line-height: 1.4em;
     margin: 20px 0;
+    color: rgb(76, 83, 90);
 }
 .stage .buttons_2x {
     display: flex;
@@ -275,7 +278,7 @@ section a.button:hover, .light_blue:hover {
 /* ===COMMUNITY=== */
 
 .community {
-    margin: 10px 0 50px 0;
+    padding: 10px 0 50px 0;
     display: flex;
     flex-direction: column;
 }
@@ -287,7 +290,7 @@ section a.button:hover, .light_blue:hover {
 
 .community .community_link {
     width: 100%;
-    border-top: 1px solid #1D5A9F;
+    /*border-top: 1px solid #1D5A9F;*/
     text-align: center;
     padding: 10px;
 }
@@ -307,7 +310,7 @@ section a.button:hover, .light_blue:hover {
     color: #1D5A9F;
 }
 
-.community .community_link .link-info {
+.community .community_link .link-info{
     font-size: 14px;
     width: 50%;
     margin: 0 auto;
@@ -320,11 +323,7 @@ section a.button:hover, .light_blue:hover {
     margin:0;
     text-transform: uppercase;
     color: #1D5A9F;
-    text-align: center;
-}
-
-.subpage {
-    padding: 30px 0;
+   /* text-align: center;*/
 }
 
 .text_center {

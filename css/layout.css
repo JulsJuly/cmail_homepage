@@ -1,11 +1,13 @@
 header {
     display: block;
-    height: 50px;
+    height: 70px;
     width: 100%;
     -webkit-box-shadow: -2px 4px 14px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: -2px 4px 14px -6px rgba(0,0,0,0.75);
     box-shadow: -2px 4px 14px -6px rgba(0,0,0,0.75);
-    background-color: #5D7C9E;
+    background-color: #545454;
+    position: fixed;
+    z-index: 100;
 }
 
 header ul, footer ul {
@@ -28,6 +30,10 @@ header ul li a, footer ul li a {
     text-transform: uppercase;
     box-sizing: border-box ;
     color: #fff;
+    line-height: 2em;
+}
+footer ul li a {
+    line-height: 1em;
 }
 
 header ul li, footer ul li {
@@ -35,20 +41,25 @@ header ul li, footer ul li {
     text-align: center;
 }
 
-header ul li a.active {
-    background-color: rgb(160, 187, 221);
-    color: #fff;
+header ul li a.active, header ul li a.active:hover {
+    background-color: rgb(201, 217, 237);
+    color: #000;
 }
 
 header ul li a:hover, footer ul li a:hover {
-    background-color: rgb(65, 92, 126);
+    background-color: rgb(53, 54, 54);
     text-decoration: underline;
     
 }
 
-header ul li a.active:hover{
-    background-color: rgb(160, 187, 221);
-    color: #fff;
+header .cmail-logo {
+    width: 55px;
+    height: 100%;
+    display: inline-block;
+    float: left;
+    position: relative;
+    border-right: 1px solid rgb(148, 148, 148);
+    padding: 0 15px;
 }
 
 /* ===WRAPPER=== */
@@ -64,27 +75,44 @@ header ul li a.active:hover{
 
 
 /* ===TITLES OF THE SECTIONS=== */
-.section-title_center {
-    width: 100%;
-    display: table;
-    background-image: linear-gradient(rgba(0,0,0,0.1) 10%, transparent 5%), linear-gradient(to right, rgba(0,0,0,0) 95%, rgba(0,0,0,0.1) 20%);
-    background-size: 10px 10px;
-    height: 80px;
-    padding: 0 20px;
+.section-title_box {
+    width: 90%;
+    display: block !important;
+    height: 60px;
+    margin: 0 auto;
+    padding: 40px 0 0 0;
+}
+
+.text_center {
     text-align: center;
-    -webkit-box-shadow: -2px -3px 10px -6px rgba(0,0,0,0.75);
-    -moz-box-shadow: -2px -3px 10px -6px rgba(0,0,0,0.75);
-    box-shadow: -2px -3px 10px -6px rgba(0,0,0,0.75);
-    margin-bottom: 40px;
+}
+
+.text_right {
+    text-align: right;
+}
+
+.text_left {
+    text-align: left;
 }
 
 .section-title {
-    display: table-cell;
     vertical-align: middle;
     position: relative;
     text-transform: uppercase;
     color: #1D5A9F
 }
+/* ===CONTENT AND FOOTER ADJUSTMENT=== */
+.content {
+    min-height: 80%;
+    min-height: -webkit-calc(100% - 40px);
+    min-height: -moz-calc(100% - 40px);
+    min-height: calc(100% - 40px);
+    background-image: linear-gradient(to right, rgba(0,0,0,0) 99%, rgba(0,0,0,0.05) 30%);
+    background-size: 50px;
+    padding-top: 70px;
+    position: relative;
+}
+
 
 /* ===FOOTER=== */
 footer {
@@ -130,4 +158,8 @@ footer ul li {
 .divs_together section .number_title,.divs_together section .step_text {
     width: 85%;
     margin: 0 auto;
+}
+
+.blue_stripes_wrapper .section-title {
+    color: rgb(76, 83, 90);
 }
